@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object accessors</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <script>
+        var student = {
+name : "Sneha",
+age : 12,
+class_type : 'ET1',
+get class(){
+    return this.class_type;
+}
+
+};
+
+//document.getElementById("demo").innerHTML = student.name + " of age " + student.age + " of " + student.class
+    </script>
+    <script>
+        var cars = {
+            name : ' audi',
+            brand : 'whatever',
+            fuel_type : " ",
+set fuel(fuel){
+    this.fuel_type = fuel;
+
+}
+
+        }
+        cars.fuel = "Petrol";
+        document.getElementById('demo').innerHTML = cars.fuel_type;
+    </script>
+</body>
+</html>

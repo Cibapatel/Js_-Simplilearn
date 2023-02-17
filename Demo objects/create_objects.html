@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    
+    <p id = "demo"></p>
+    <script>
+        //using object literals to create objects
+var student ={
+    name : "ciba",
+    age : 21,
+    class : "ET1",
+};
+//document.getElementById("demo").innerHTML= student.name + " is a good student of age " + student.age + " studying in " + student.class;
+
+    </script>
+    <script>
+        //using the new keyword for objects
+        var student = new Object();
+        student.name = "ciba";
+    student.age = 21;
+    student.class = "ET1";
+    //document.getElementById("demo").innerHTML= student.name + " is a good student of age " + student.age + " studying in " + student.class;
+    </script>
+    <script>
+        //use an object constructor to create and define objects
+        function stud(name,age, studies){
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        }
+        var student = stud("ciba", 21, "BE ET1")
+        document.getElementById("demo").innerHTML= student.name + " is a good student of age " + student.age + " studying in " + student.studies;
+    </script>
+    
+</body>
+</html>
