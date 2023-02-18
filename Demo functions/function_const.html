@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function constructor</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var myFunct = new Function("a", "b", "return a * b");
+        var x = myFunct(4,3)
+        document.getElementById("demo").innerHTML = "The sum is" + x;
+    </script>
+    <script>
+        //self invoking functions
+        (function(){
+            alert("Hello")
+        })()
+    </script>
+    <p id="prod"></p>
+    <script>
+        //function as value
+        function product(a, b) {
+            return a * b;
+        }
+        let y = product(2,3);
+        document.getElementById("prod").innerHTML = "The product is " + y
+    </script>
+    
+    <p id="circ"></p>
+    <script>
+        //functions as objects
+        var body = "return Math.PI * r * r";
+        var circle = new Function("r", body);
+        document.write(circle(5))
+    </script>
+<p id="arrow"></p>
+    <script>
+const myfunct = (a, b, c) => {
+    return a * b;
+}
+let z = myfunct(2,3)
+document.write("the product is " + z)
+    </script>
+
+    <script>
+        //generator function
+        function* generatorfunct(){
+            yield 1;
+            yield 2;
+            return 3;
+
+        }
+        let generator = generatorfunct();
+        let one = generator.next();
+        let two = generator.next();
+        let three = generator.next();
+        document.write(JSON.stringify(one));
+        document.write(JSON.stringify(two));
+        document.write(JSON.stringify(three));
+    </script>
+</body>
+</html>

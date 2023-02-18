@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        function my_func(val) {
+            document.getElementById("demo").innerHTML = val*val
+        }
+        my_func(4);
+        
+    </script>
+   
+<script>
+    let c = function func() {
+        //alert('Hi')
+    }
+    document.getElementById("demo").innerHTML = c()
+</script>
+<form action="">
+    <input type="text" placeholder="Enter a"> 
+    <input type="text" placeholder="Enter b"> 
+    <button onclick="x()" > Submit</button>
+    <div id="demo"></div>
+</form>
+<script>
+
+     function x() {
+        document.getElementById("demo").innerHTML = "The sum is " 
+    }
+    //wrong code
+    
+</script>
+</body>
+</html>
