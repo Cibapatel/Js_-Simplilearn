@@ -21,11 +21,19 @@ reject()
         })
 
         car.catch(function(){
-            document.write("It is empty")
+            document.write("It is empty <br> ")
         })
     </script>
     <script>
         //nested promises
+    </script>
+    <script>
+        //set timed out
+        document.write("Hello world <br>")
+        setTimeout(function () {
+            document.write("Hello in 2 secs <br> ")
+        },2000)
+        document.write("something <br> ")
     </script>
 </body>
 </html>
