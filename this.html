@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword</title>
+</head>
+<body>
+    <script>
+        var value = 12;
+        function myfunc(){
+            let value = 200;
+            alert(" The value " + value)
+            alert("This value " + this.value)
+
+        }
+        myfunc()
+    </script>
+    <script>
+        const rand = {
+            name : "Ciba",
+            video: [1,2,3],
+            info(){
+                this.video.forEach(function(tag){
+                    console.log(this.name, tag)
+                },this)
+            }
+        }
+        rand.info()
+    </script>
+</body>
+</html>
