@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <script>
+function toggle(){
+ var x = document.getElementById("toggle1");
+ if(x.style.display === "none"){
+   x.style.display = "block"
+ }
+ else{
+    x.style.display = "none"
+ }
+}
+    </script>
+ 
+    <p id = "toggle1" >Click on the button to hide or show this text</p>
+    <button  type="button" onclick="toggle()">Toggle</button>
+</body>
+</html>
+
+<!-- style = used to display or hide
+block = block of content -->
